@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="411.0" prefWidth="353.0" xmlns:fx="http://javafx.com/fxml" fx:controller="ph.edu.ue.rnd.brainblitz.LoginController">
+  <children>
+    <Button fx:id="loginButton" layoutX="143.0" layoutY="359.0" minHeight="22.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="29.0" prefWidth="76.0" style="-fx-background-color:rgb(176,6,6);" text="Login" textFill="WHITE">
+      <font>
+        <Font name="Segoe UI" size="14.0" />
+      </font>
+    </Button>
+    <Label layoutX="32.0" layoutY="278.0" text="Username">
+      <font>
+        <Font name="Segoe UI Bold" size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="32.0" layoutY="307.0" text="Password" />
+    <TextField id="username" fx:id="usernameField" layoutX="114.0" layoutY="279.0" prefHeight="22.0" prefWidth="200.0" />
+    <PasswordField fx:id="passwordField" layoutX="114.0" layoutY="307.0" prefHeight="22.0" prefWidth="200.0" />
+    <ImageView fitHeight="275.0" fitWidth="275.0" layoutX="43.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@utils/logo_brain_blitz.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Label id="labelOut" fx:id="outLabel" layoutX="234.0" layoutY="14.0" />
+  </children>
+  <stylesheets>
+    <URL value="@utils/login.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,9 @@
+.root {
+   -fx-background-image:url('background.jpg');
+}
+#loginButton:hover{
+    -fx-background-color:rgb(140,6,6);
+}
+#header{
+    -fx-background-image:url('header.png');
+}
